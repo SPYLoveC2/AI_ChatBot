@@ -1,11 +1,14 @@
-# Data folder 
+# raw Data folder 
 raw_data/*
 !raw_data/.gitkeep
 
-# Embedding folder 
+# splited data folder 
 all_doc_images/*
 !all_doc_images/.gitkeep
 
+# history folder 
+chat_history/*
+!chat_history/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

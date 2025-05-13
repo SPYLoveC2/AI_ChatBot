@@ -89,7 +89,7 @@ def get_output_guard_prompt(question, result):
 
 
 
-def check_initial_safeguard(question: str, result: str) -> str:
+def check_initial_safeguard(question):
     political_keywords = [
         "political beliefs", "president", "government policies", "central bank acting politically",
         "left wing", "right wing", "economic crisis"
@@ -158,7 +158,7 @@ def text_translate(query):
 
 
 
-def classify_and_rephrase_query(query, recent_queries, bedrock):
+def classify_and_rephrase_query(query, recent_queries):
     if not recent_queries:
         return "Classification: New query\nRephrased Query: " + query
 
